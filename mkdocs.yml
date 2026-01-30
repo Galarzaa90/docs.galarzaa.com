@@ -9,6 +9,8 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  font:
+    text: Noto Sans
   custom_dir: overrides
   palette:
     # Palette toggle for automatic mode
@@ -99,7 +101,6 @@ extra:
 nav:
   - Home: 
     - Home: index.md
-    - Uses: uses.md
     - System Setup: setup.md
     - Badges: badges.md
   - Development:
