@@ -1,4 +1,8 @@
-# Windows
+---
+icon: fontawesome/brands/windows
+---
+
+# :fontawesome-brands-windows: Windows
 ## Registry Edits
 ### Enable/disable Bing search on Start Menu
 

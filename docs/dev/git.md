@@ -1,6 +1,15 @@
-# DevOps
+---
+icon: simple/git
+---
+# :simple-git: Git
 
-## git configuration per directory
+## Undo last commit without losing changes
+
+```sh
+git reset --soft HEAD~1
+```
+
+## Git configuration per directory
 If you are handling multiple git repositories in the same machine, but you require separate credentials (e.g personal, work), you can define settings that are applied only to repositories in a subdirectory.
 
 In `.gitconfig`, add the `[includeIf]` block as shown below:

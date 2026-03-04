@@ -1,4 +1,9 @@
-# Terminal
+---
+icon: fontawesome/brands/linux
+---
+
+# :fontawesome-brands-linux: Linux
+
 ## Style Terminal
 
 Colors the command line to make the start of one command easier to find.
