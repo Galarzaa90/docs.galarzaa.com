@@ -1,0 +1,125 @@
+[project]
+site_name = "Galarzaa's Docs"
+site_description = "Personal collection of snippets and miscellaneous documentation."
+site_author = "Allan Galarza"
+site_url = "https://docs.galarzaa.com"
+copyright = "&copy; 2026 Allan Galarza"
+repo_name = "GitHub"
+repo_url = "https://github.com/Galarzaa90/docs.galarzaa.com"
+edit_uri = "edit/main/docs/"
+
+nav = [
+  { Home = "index.md" },
+  { "System Setup" = "setup.md" },
+  { Badges = "badges.md" },
+  { Development = [
+    { Bookmarks = "dev/bookmarks.md" },
+    { "Editor Extensions & Plugins" = "dev/extensions.md" },
+    { Python = [
+      { Python = "dev/python/index.md" },
+      { Ruff = "dev/python/ruff.md" },
+    ] },
+    { Windows = "dev/windows.md" },
+    { Linux = "dev/linux.md" },
+    { Misc = "dev/misc.md" },
+  ] },
+  { Projects = [
+    { "PC Monitoring" = "projects/monitoring.md" },
+  ] },
+]
+
+[project.theme]
+variant = "modern"
+custom_dir = "overrides"
+logo = "assets/logo.png"
+favicon = "assets/favicon.ico"
+font.text = "Noto Sans"
+features = [
+  "content.action.edit",
+  "content.action.view",
+  "content.code.copy",
+  "content.tooltips",
+  "navigation.expand",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant.prefetch",
+  "navigation.instant.progress",
+  "navigation.instant",
+  "navigation.sections",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  "search.share",
+  "search.suggest",
+  "toc.follow",
+]
+icon.repo = "fontawesome/brands/github"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "material/brightness-auto"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "indigo"
+accent = "orange"
+toggle.icon = "material/brightness-7"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "indigo"
+accent = "orange"
+toggle.icon = "material/brightness-4"
+toggle.name = "Switch to system preference"
+
+[project.plugins.meta]
+
+[project.plugins.git-revision-date-localized]
+enable_creation_date = true
+
+[project.plugins.git-committers]
+repository = "Galarzaa90/PersonalDocs"
+branch = "main"
+
+[project.plugins.tags]
+
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
+[project.markdown_extensions.toc]
+permalink = true
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.codehilite]
+[project.markdown_extensions.pymdownx.blocks.caption]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.snippets]
+[project.markdown_extensions.pymdownx.superfences]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+[project.markdown_extensions.md_in_html]
+
+[[project.extra.social]]
+icon = "fontawesome/solid/globe"
+link = "https://galarzaa.com"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/Galarzaa90"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/galarzaa/"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/threads"
+link = "https://threads.com/@galarzaa90"
