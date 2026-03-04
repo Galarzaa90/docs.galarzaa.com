@@ -7,28 +7,28 @@
         <loc>https://docs.galarzaa.com/setup/</loc>
       </url>
       <url>
-        <loc>https://docs.galarzaa.com/badges/</loc>
+        <loc>https://docs.galarzaa.com/dev/bookmarks/</loc>
       </url>
       <url>
-        <loc>https://docs.galarzaa.com/dev/bookmarks/</loc>
+        <loc>https://docs.galarzaa.com/dev/discord/</loc>
+      </url>
+      <url>
+        <loc>https://docs.galarzaa.com/dev/docker/</loc>
       </url>
       <url>
         <loc>https://docs.galarzaa.com/dev/extensions/</loc>
       </url>
       <url>
-        <loc>https://docs.galarzaa.com/dev/python/</loc>
-      </url>
-      <url>
-        <loc>https://docs.galarzaa.com/dev/python/ruff/</loc>
-      </url>
-      <url>
-        <loc>https://docs.galarzaa.com/dev/windows/</loc>
+        <loc>https://docs.galarzaa.com/dev/git/</loc>
       </url>
       <url>
         <loc>https://docs.galarzaa.com/dev/linux/</loc>
       </url>
       <url>
-        <loc>https://docs.galarzaa.com/dev/misc/</loc>
+        <loc>https://docs.galarzaa.com/dev/python/</loc>
+      </url>
+      <url>
+        <loc>https://docs.galarzaa.com/dev/windows/</loc>
       </url>
       <url>
         <loc>https://docs.galarzaa.com/projects/monitoring/</loc>
