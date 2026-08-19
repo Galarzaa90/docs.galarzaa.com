@@ -1,4 +1,8 @@
-# Editor Extensions & Plugins
+---
+icon: lucide/puzzle
+---
+
+# :lucide-puzzle: Editor Extensions & Plugins
 
 A compilation of the extensions and plugins I use in my IDEs.
 

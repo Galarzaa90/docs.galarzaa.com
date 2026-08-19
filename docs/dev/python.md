@@ -30,7 +30,7 @@ A quick lookup table listing the main features (or at least the features that in
 
     ____
 
-    - `Required` and `NotReuired` for [`TypedDict`](https://docs.python.org/3/library/typing.html#typing.TypedDict).
+    - `Required` and `NotRequired` for [`TypedDict`](https://docs.python.org/3/library/typing.html#typing.TypedDict).
     - [`Self`](https://docs.python.org/3/library/typing.html#typing.Self) type.
 
 -   __Python 3.10__ (2021-10-04)
@@ -42,12 +42,48 @@ A quick lookup table listing the main features (or at least the features that in
 
 </div>
 
+## Package version from `__version__`
 
-## :simple-ruff: Ruff
+In my python libraries, I prefer maintaining the module version in a `__version__` variable. The following is used to load the version from the module itself:
+
+```toml title="pyproject.toml"
+[project]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = { attr = "package_name.__version__" }
+```
+
+
+## Requirements from `requirements.txt`
+
+Set the module's requirement list from a file.
+
+```toml title="pyproject.toml"
+[project]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+```
+
+Optional dependencies can also be set from a file:
+
+```toml title="pyproject.toml"
+[project]
+dynamic = ["optional-dependencies"]
+
+[tool.setuptools.dynamic.optional-dependencies]
+docs = { file = ["requirements-docs.txt"] }
+testing = { file = ["requirements-testing.txt"] }
+```
+
+## :simple-ruff: Ruff Config
 
 I use [Ruff](https://docs.astral.sh/ruff/) in most of my Python projects to keep consistent formatting and detect possible bugs. I usually have to go and copy my ruff config from another project and adjust it.
 
-```toml
+
+```toml title="pyproject.toml"
 [tool.ruff.lint]
 select = [
     "E", "W293", # pycodestyle
@@ -107,3 +143,4 @@ extend-immutable-calls = ["fastapi.Depends", "fastapi.Query", "fastapi.Path"]
 [tool.ruff.lint.flake8-type-checking]
 runtime-evaluated-base-classes = ["pydantic.BaseModel"]
 ```
+
