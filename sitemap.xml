@@ -4,7 +4,7 @@
         <loc>https://docs.galarzaa.com/</loc>
       </url>
       <url>
-        <loc>https://docs.galarzaa.com/setup/</loc>
+        <loc>https://docs.galarzaa.com/dev/</loc>
       </url>
       <url>
         <loc>https://docs.galarzaa.com/dev/bookmarks/</loc>
@@ -32,5 +32,8 @@
       </url>
       <url>
         <loc>https://docs.galarzaa.com/projects/monitoring/</loc>
+      </url>
+      <url>
+        <loc>https://docs.galarzaa.com/setup/</loc>
       </url>
 </urlset>
